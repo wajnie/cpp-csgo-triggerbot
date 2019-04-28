@@ -1,7 +1,7 @@
 # Introduction
 Triggerbot for Counter-Strike Global Offensive. Here i am gonna to show you the basics of making a mini-cheat for csgo. Just a simple triggerbot. Install Visual Studio or some other good editor.
 # WARNING!
-**Do not use it to cheat in csgo! It will get you instantly banned! This tutorial is for educational purproses
+**Do not use it to cheat in csgo! It will get you instantly banned! This tutorial is for educational purproses**
 # 1. Setup
 To make a triggerbot you have to use [ProcMem](https://www.unknowncheats.me/forum/downloads.php?do=file&id=13249).
 
