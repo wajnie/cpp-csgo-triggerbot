@@ -95,7 +95,7 @@ int main()
 {
     while(true)
     {
-        Trigger();
+        Bot();
         // Add a Sleep() here if you have potato pc like me
     }
 }
