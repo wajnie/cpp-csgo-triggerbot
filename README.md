@@ -43,7 +43,7 @@ int LocalTeam = Mem.Read<int>(LocalPlayer + teamOffset);
 // That's our crosshair ID, we will use it for reading what's "in our crosshair"
 int CrossHairID = Mem.Read<int>(LocalPlayer + CrosshairOffset);
 ```
-After that we have to create a Trigger function. I will make it shorter and just name it Bot. We have to read memory which is required to make the triggerbot work
+After that we have to create a Triggerbot function. I will make it shorter and just name it Bot. We have to read memory which is required to make the triggerbot work
 ```cpp
 void Bot()
 {
