@@ -1,9 +1,9 @@
 # Introduction
-Triggerbot for Counter-Strike Global Offensive. Here i am gonna to show you the basics of making a mini-cheat for csgo. Just a simple triggerbot. Install Visual Studio or some other good editor.
+Triggerbot for Counter-Strike Global Offensive. Here I am going to show you the basics of making a mini-cheat for csgo. Just a simple triggerbot. Install Visual Studio or some other good editor.
 # WARNING!
-**Do not use it to cheat in csgo! It will get you instantly banned! This tutorial is for educational purproses**
+**Do not use it to cheat in csgo! It will get you instantly banned! This tutorial is for educational purposes***
 # 1. Setup
-To make a triggerbot you have to use [ProcMem](https://www.unknowncheats.me/forum/downloads.php?do=file&id=13249).
+To make a triggerbot first you have to install and use [ProcMem](https://www.unknowncheats.me/forum/downloads.php?do=file&id=13249).
 
 First, create your `main.cpp` file and add `ProcMem.cpp`, `ProcMem.h` from the downloaded .rar file. You do this in Visual Studio by **right clicking source files** -> Add -> Existing item and choosing `ProcMem.cpp`. Then you do exactly the same but in Header Files with `ProcMem.h`.
 Next we need to initialize ProcMem in our main file (`main.cpp`) so we can use functions in it. Easy, huh?
@@ -73,7 +73,7 @@ if (LocalTeam != EnemyTeam && EnemyHealth > 0)
     // shoot
 }
 ```
-That's everything. **BUT WAIT!** It does not shoot! Because it's only memory reading triggerbot. Now we are gonna make it click/shoot instead of forcing it through writing memory. We will be using `mouse_event`. Check mouse_event on [MSDN](https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-mouse_event) and just try to get it. I get it after watching a tutorial. But anyways, there is the full code. **NOTE** If you do not understand something go back and try again.
+That's *almost* everything. **BUT WAIT!** It does not shoot! Because it's only memory reading triggerbot. Now we are gonna make it click/shoot instead of forcing it through writing memory. We will be using `mouse_event`. Check mouse_event on [MSDN](https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-mouse_event) and just try to get it. I get it after watching a tutorial. But anyways, there is the full code. **NOTE** If you do not understand something go back and try again.
 ```cp
 void Bot()
 {
@@ -88,4 +88,15 @@ void Bot()
     mouse_event(MOUSEEVENTF_LEFTUP, NULL, NULL, NULL, NULL);
     // Now you can make a cooldown beetween shots using Sleep() again.
     }
-    ```
+```
+Now our final part, just add the triggerbot to your main in a loop
+```cpp
+int main()
+{
+    while(true)
+    {
+        Trigger();
+        // Add a Sleep() here if you have potato pc like me
+    }
+}
+```
