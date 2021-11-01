@@ -96,7 +96,7 @@ int main()
     while(true)
     {
         Bot();
-        // Add a Sleep() here if you have potato pc like me
+        // Add a Sleep() here if you want some optimization
     }
 }
 ```
