@@ -40,6 +40,6 @@ void Bot()
     {
         while (true) {
             Bot();
-            // Add a Sleep() here if you have potato pc like me
+            // Sleep() it if u want
         }
     }
